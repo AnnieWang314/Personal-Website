@@ -1,0 +1,283 @@
+/* set up */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #d1eae7;
+    color: black;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-width: 100%;
+}
+body.dark-mode {
+    background-color: #142b2c;
+    color: #d1eae7;
+}
+#main {
+    width: 80%;
+    min-height: 100vh;
+    align-items: center;
+    margin: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+#headers {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-left {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    gap: 3vh;
+    font-variant: small-caps;
+}
+#header-logo {
+    height: 25px;
+    width: auto;
+    margin-top: 0.7vh;
+}
+#header-right {
+    justify-content: space-between;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.icon-link {
+    text-decoration: none;
+}
+.header-link:hover {
+    cursor: pointer;
+}
+.header-link:after {
+    width: 100%;
+    position: absolute;
+}
+#middle {
+    align-items: center;
+}
+
+/* home page */
+/* ATTEMPT ONE
+#middle #home-page {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    overflow: scroll;
+    display: inline-block;
+}
+#middle .home-outside {
+    font-size: 600%;
+    vertical-align: center;
+    background-color: #d1eae7;
+    margin-top: 20px;
+}
+#middle .home-overlay {
+    font-size: 600%;
+    vertical-align: center;
+    background-color: #d1eae7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1;
+}
+#middle #home-page #home-anagram {
+    position: absolute;
+}
+#middle #home-page #home-pic {
+    height: 60vh;
+    width: auto;
+}
+*/
+
+/* ATTEMPT TWO */
+#middle #home-page {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+#middle #home-page #home-name {
+    box-sizing: content-box;
+    padding: 20px;
+    font-size: 8vw;
+    display: inline-block;
+    position: relative;
+    top: 26vh;
+    left: -7vw;
+    z-index: 1;
+    border-radius: 15px 50px;
+    margin-bottom: 1vh;
+}
+#home-name {
+    background-color: #d1eae7;
+}
+#home-name.dark-mode {
+    background-color: #142b2c;
+}
+
+#middle #home-page #home-aka {
+    font-size: 1.5vw;
+    position: relative;
+    top: 20.5vh;
+    left: 30vw;
+    z-index: 2;
+    width: fit-content;
+}
+
+#middle #home-page #pic-container {
+    position: relative;
+    top: -20vh;
+    left: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 40%;
+}
+#middle #home-page #pic-container img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+
+/* about page */
+#about-page {
+    display: block;
+}
+
+#about-page #intro-stuff {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+}
+@media (max-width: 60vh) {
+    #about-page #intro-stuff {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+#about-page #intro-stuff .intro-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#about-page #intro-stuff #intro-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+#about-page #intro-stuff #intro-middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+#about-page #intro-stuff #intro-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+#about-page #intro-stuff .intro-writing {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 40vw;
+}
+#about-mepic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+@media (max-width: 60vh) {
+    #about-mepic {
+        width: 30vh;
+        border-radius: 50%;
+    }
+}
+.about-pic {
+    width: 15vh;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+.about-caption {
+    font-size: 15px;
+}
+.pic-wrapper {
+    float: right;
+    justify-self: center;
+    display: flex;
+    flex-flow:space-around;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5vh;
+    margin-top: 3vh;
+    align-self: flex-start;
+}
+#about-page a {
+    color: #366f72;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+
+/* projects page */
+#projects-page {
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* funsies page */
+#funsies-page {
+    display: flex;
+    flex-direction: column;
+}
+#footer-funsies:hover {
+    cursor: pointer;
+}
+
+/* footers */
+#footer {
+    border-top: 1px solid #000000;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    gap: 5px;
+    font-size: 2vh;
+}
+#footer .darkmode {
+    display: inline-block;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
