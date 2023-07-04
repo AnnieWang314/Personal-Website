@@ -83,6 +83,7 @@ body.dark-mode {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        height: fit-content;
     }
 }
 @media (max-width: 519px) {
@@ -131,12 +132,6 @@ body.dark-mode {
     }
 }
 @media (max-width: 519px) {
-    .headers-menu .header-right .menu.active {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (max-width: 519px) {
     .headers-menu .header-right .menu ul {
         list-style-type: none;
         margin: 0;
@@ -147,6 +142,7 @@ body.dark-mode {
 }
 @media (max-width: 519px) {
     .headers-menu .header-right .menu li {
+        font-size: 2vh;
         margin:0;
         padding: 5px;
         border: 1px solid #97c3c3;
@@ -272,6 +268,7 @@ body.dark-mode {
         align-items: center;
         justify-content: flex-start;
         gap: 1vh;
+        margin-top: 4vh;
     }
 }
 @media (max-width: 519px) {

@@ -147,16 +147,17 @@ checkbox.addEventListener("change",(event) => {
 const menutoggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
-menutoggle.onclick = (_event) => {
-    menu.classList.toggle("active");
-}
+menutoggle.addEventListener("click",() => {
+    menu.style.display ="none" ? "flex" : "none";
+    menu.style.flexDirection = "column";
+})
 document.addEventListener("click",(event) => {
     const targetElement = event.target;
     const isInsideMenu = targetElement.classList.contains("menu");
     const isMenuToggle = targetElement.classList.contains("menu-toggle");
 
     if (!isInsideMenu && !isMenuToggle) {
-        menu.classList.remove("active");
+        menu.style.display = "none";
     }
 })
 
