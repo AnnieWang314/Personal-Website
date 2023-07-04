@@ -36,7 +36,7 @@ projectsLinkDiv.onclick = (_event) => {
     funsiesDiv.style.display = "none";
     socialsDiv.style.display = "none";
 };
-
+/*
 funsiesLinkDiv.onclick = (_event) => {
     homeDiv.style.display = "none";
     aboutDiv.style.display = "none";
@@ -44,6 +44,7 @@ funsiesLinkDiv.onclick = (_event) => {
     funsiesDiv.style.display = "flex";
     socialsDiv.style.display = "none";
 };
+*/
 
 smallHomeLink.onclick = (_event) => {
     homeDiv.style.display = "flex";

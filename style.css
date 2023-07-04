@@ -426,9 +426,11 @@ body.dark-mode {
     display: flex;
     flex-direction: column;
 }
+/*
 #footer-funsies:hover {
     cursor: pointer;
 }
+*/
 
 /* socials page */
 .socials-page {
