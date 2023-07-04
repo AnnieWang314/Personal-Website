@@ -319,7 +319,7 @@ body.dark-mode {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 30px;
     align-items: center;
 }
